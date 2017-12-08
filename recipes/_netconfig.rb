@@ -15,7 +15,7 @@ directory node['netconfig']['installdir'] do
   action :create
 end
 
-git 'Downlaod netconfig' do
+git 'Download netconfig' do
   repository 'https://github.com/v1tal3/netconfig.git'
   reference 'master'
   destination node['netconfig']['installdir']

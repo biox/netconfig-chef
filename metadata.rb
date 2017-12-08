@@ -11,4 +11,3 @@ source_url 'https://github.com/bioxcession/netconfig'
 
 depends 'poise-python', '~> 1.6.0'
 depends 'nginx', '~> 7.0.2'
-depends 'supervisor', '~> 0.4.12'

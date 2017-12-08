@@ -11,11 +11,11 @@ server {
     ssl_certificate_key /etc/nginx/ssl/server.key;
 
     location / {
-        proxy_pass http://localhost:8000;
+        proxy_pass http://localhost:<%= @port %>;
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
     }
     location /netconfig {
-        alias  /home/netconfig/netconfig/app/;
+        alias  <%= @home %>/app/;
     }
 }

@@ -8,6 +8,10 @@ Supported operating systems:
 
 - Ubuntu 16.04 (Xenial)
 
+Quirks:
+
+- It is assumed that netconfig is the only service running on your server,
+virtualenvs are not being utilized.
 
 # TASTE
 

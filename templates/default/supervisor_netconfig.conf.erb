@@ -1,0 +1,4 @@
+[program:netconfig]
+command = gunicorn app:app -b localhost:<%= @port %>
+directory = <%= @home %>
+user = <%= @user %>
