@@ -1,0 +1,14 @@
+[Unit]
+Description = Netconfig
+Documentation = https://github.com/v1tal3/netconfig
+After = network.target
+[Service]
+Type = simple
+Environment = PATH=/usr/bin/python
+User = netconfig
+Group = netconfig
+WorkingDirectory = /opt/netconfig
+ExecStart = /usr/local/bin/uwsgi --ini netconfig.ini
+Restart = always
+[Install]
+WantedBy = multi-user.target
